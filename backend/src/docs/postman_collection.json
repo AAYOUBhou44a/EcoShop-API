@@ -1,0 +1,39 @@
+{
+  "info": {
+    "name": "EcoShop API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Auth - Register",
+      "request": {
+        "method": "POST",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "url": "{{base_url}}/api/v1/auth/register",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\":\"Test User\",\n  \"email\":\"user@example.com\",\n  \"password\":\"password123\",\n  \"password_confirmation\":\"password123\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Products - List",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/api/v1/products"
+      }
+    },
+    {
+      "name": "Order - Create",
+      "request": {
+        "method": "POST",
+        "header": [{"key": "Authorization", "value": "Bearer {{token}}"}],
+        "url": "{{base_url}}/api/v1/orders"
+      }
+    }
+  ],
+  "variable": [
+    {"key": "base_url", "value": "http://localhost:8000"},
+    {"key": "token", "value": ""}
+  ]
+}
