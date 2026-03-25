@@ -11,3 +11,4 @@ Route::view('/contact', 'pages.contact')->name('contact');
 
 Route::view('/', 'welcome');
 
+
