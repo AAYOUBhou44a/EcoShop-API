@@ -32,3 +32,7 @@ WORKDIR /var/www
 RUN chown -R laravel:laravel /var/www
 
 USER laravel
+
+COPY docker/start-app.sh /usr/local/bin/start-app
+RUN chmod +x /usr/local/bin/start-app
+CMD ["start-app"]
