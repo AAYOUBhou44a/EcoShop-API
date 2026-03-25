@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\UpsertCartItemRequest;
+use App\Http\Requests\UpdateCartItemRequest;
 use App\Models\CartItem;
 use App\Models\Product;
 use Illuminate\Http\JsonResponse;
@@ -34,7 +35,7 @@ class CartController extends Controller
         return response()->json(['message' => 'Cart updated', 'item' => $item->load('product')], 201);
     }
 
-    public function update(UpsertCartItemRequest $request, CartItem $cartItem): JsonResponse
+    public function update(UpdateCartItemRequest $request, CartItem $cartItem): JsonResponse
     {
         abort_if($cartItem->user_id !== auth()->id(), 403);
 
