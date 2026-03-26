@@ -6,10 +6,10 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 
-<<<<<<< HEAD
+
 class UserFactory extends Factory
 {
-=======
+
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\User>
  */
@@ -25,14 +25,14 @@ class UserFactory extends Factory
      *
      * @return array<string, mixed>
      */
->>>>>>> dev
+
     public function definition(): array
     {
         return [
             'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
             'email_verified_at' => now(),
-<<<<<<< HEAD
+
             'password' => Hash::make('password'),
             'remember_token' => Str::random(10),
             'is_admin' => false,
@@ -42,7 +42,7 @@ class UserFactory extends Factory
     public function admin(): static
     {
         return $this->state(fn () => ['is_admin' => true]);
-=======
+
             'password' => static::$password ??= Hash::make('password'),
             'remember_token' => Str::random(10),
         ];
@@ -56,6 +56,5 @@ class UserFactory extends Factory
         return $this->state(fn (array $attributes) => [
             'email_verified_at' => null,
         ]);
->>>>>>> dev
     }
 }

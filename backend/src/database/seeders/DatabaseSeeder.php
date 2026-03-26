@@ -3,9 +3,14 @@
 namespace Database\Seeders;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use App\Models\Category;
 use App\Models\Product;
 use App\Models\User;
+=======
+use App\Models\User;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+>>>>>>> dev
 =======
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -14,6 +19,7 @@ use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     public function run(): void
     {
@@ -31,6 +37,8 @@ class DatabaseSeeder extends Seeder
             ->has(Product::factory()->count(8))
             ->create();
 =======
+=======
+>>>>>>> dev
     use WithoutModelEvents;
 
     /**
@@ -44,6 +52,9 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]);
+<<<<<<< HEAD
+>>>>>>> dev
+=======
 >>>>>>> dev
     }
 }

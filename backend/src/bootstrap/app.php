@@ -8,7 +8,10 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withRouting(
         web: __DIR__.'/../routes/web.php',
 <<<<<<< HEAD
+<<<<<<< HEAD
         api: __DIR__.'/../routes/api.php',
+=======
+>>>>>>> dev
 =======
 >>>>>>> dev
         commands: __DIR__.'/../routes/console.php',
@@ -16,12 +19,15 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
         //
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //
     })->create();
 =======
+=======
+>>>>>>> dev
         // C'est ICI que tu désactives le CSRF globalement
         $middleware->validateCsrfTokens(except: [
             '*', 
@@ -29,5 +35,8 @@ return Application::configure(basePath: dirname(__DIR__))
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //
+<<<<<<< HEAD
     })->create();
->>>>>>> dev
+z
+    })->create();
+

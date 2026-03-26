@@ -7,6 +7,12 @@ use Illuminate\Foundation\Http\FormRequest;
 class RegisterRequest extends FormRequest
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    /**
+     * Determine if the user is authorized to make this request.
+     */
+>>>>>>> dev
 =======
     /**
      * Determine if the user is authorized to make this request.
@@ -18,6 +24,7 @@ class RegisterRequest extends FormRequest
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function rules(): array
     {
         return [
@@ -25,6 +32,8 @@ class RegisterRequest extends FormRequest
             'email' => ['required', 'email', 'max:255', 'unique:users,email'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
 =======
+=======
+>>>>>>> dev
     /**
      * Get the validation rules that apply to the request.
      *
@@ -75,6 +84,9 @@ class RegisterRequest extends FormRequest
         'reputation_score.numeric'  => 'Le score doit être un nombre.',
         'banned_at.date'            => 'La date de bannissement n’est pas valide.',
         'banned_at.after'           => 'La date de bannissement doit être une date future.',
+<<<<<<< HEAD
+>>>>>>> dev
+=======
 >>>>>>> dev
         ];
     }

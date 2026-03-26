@@ -7,6 +7,12 @@ use Illuminate\Foundation\Http\FormRequest;
 class LoginRequest extends FormRequest
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    /**
+     * Determine if the user is authorized to make this request.
+     */
+>>>>>>> dev
 =======
     /**
      * Determine if the user is authorized to make this request.
@@ -18,12 +24,15 @@ class LoginRequest extends FormRequest
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function rules(): array
     {
         return [
             'email' => ['required', 'email'],
             'password' => ['required', 'string'],
 =======
+=======
+>>>>>>> dev
     /**
      * Get the validation rules that apply to the request.
      *
@@ -47,6 +56,9 @@ class LoginRequest extends FormRequest
         
         'password.required' => 'Le mot de passe est obligatoire.',
         'password.between'  => 'Le mot de passe doit faire entre 3 et 255 caractères.',
+<<<<<<< HEAD
+>>>>>>> dev
+=======
 >>>>>>> dev
         ];
     }

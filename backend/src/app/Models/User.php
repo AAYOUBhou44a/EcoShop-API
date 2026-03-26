@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
@@ -36,6 +37,8 @@ class User extends Authenticatable
     }
 }
 =======
+=======
+>>>>>>> dev
 
 class User extends Authenticatable
 {
@@ -65,5 +68,9 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed', // Hachage automatique avec Bcrypt
     ];
+<<<<<<< HEAD
+}
+>>>>>>> dev
+=======
 }
 >>>>>>> dev

@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "name": "ecosho/api",
   "type": "project",
   "require": {
@@ -12,6 +13,8 @@
     "pestphp/pest-plugin-laravel": "^3.0"
   }
 =======
+=======
+>>>>>>> dev
     "$schema": "https://getcomposer.org/schema.json",
     "name": "laravel/laravel",
     "type": "project",
@@ -96,5 +99,8 @@
     },
     "minimum-stability": "stable",
     "prefer-stable": true
+<<<<<<< HEAD
+>>>>>>> dev
+=======
 >>>>>>> dev
 }
