@@ -62,11 +62,22 @@
                         S'inscrire
                     </a>
                 @else
-                    <div class="flex items-center gap-3 bg-white border-2 border-black px-4 py-2 shadow-[4px_4px_0px_0px_#10b981]">
-                        <span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
-                        <span class="text-[10px] font-black uppercase">{{ Auth::user()->name }}</span>
-                    </div>
-                @endguest
+    <div class="flex items-center gap-4">
+        {{-- Affichage du nom --}}
+        <div class="flex items-center gap-3 bg-white border-2 border-black px-4 py-2 shadow-[4px_4px_0px_0px_#10b981]">
+            <span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
+            <span class="text-[10px] font-black uppercase">{{ Auth::user()->name }}</span>
+        </div>
+
+        {{-- Formulaire de déconnexion (obligatoire en POST pour la sécurité) --}}
+        <form method="POST" action="{{ route('logout') }}">
+            @csrf
+            <button type="submit" class="text-[10px] font-black uppercase bg-red-500 text-white px-3 py-2 border-2 border-black shadow-[4px_4px_0px_0px_#000] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all">
+                Logout_
+            </button>
+        </form>
+    </div>
+@endguest
             </div>
         </div>
     </nav>
